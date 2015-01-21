@@ -1,0 +1,9 @@
+*.tlog
+*.obj
+*.log
+*.lastbuildstate
+*.pch
+*.unsuccessfulbuild
+*.vcxprojResolveAssemblyReference.cache
+/vc100.idb
+/vc100.pdb

@@ -1,0 +1,434 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RaVi.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""afxres.rc""         // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RaVi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Demo"
+    BEGIN
+        MENUITEM "Mirrorsphere",                ID_DEMO_MIRRORSPHERE
+        MENUITEM "Spheres",                     ID_DEMO_SPHEREHEAP
+        MENUITEM "Balls",                       ID_DEMO_3SPHERES
+        MENUITEM "Torus",                       ID_DEMO_TORUS
+        MENUITEM "Cube",                        ID_DEMO_CUBE
+        MENUITEM "Egg",                         ID_DEMO_EGG
+        MENUITEM "Shadows 1",                   ID_DEMO_SHADOWS1
+        MENUITEM "Area Light",                  ID_DEMO_SHADOWS3
+        MENUITEM "Cornell Box",                 ID_DEMO_CORNELL
+        MENUITEM SEPARATOR
+        MENUITEM "Animation",                   ID_DEMO_ANIM
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Quality"
+    BEGIN
+        MENUITEM "1:1",                         ID_QUALITY_1by1
+        MENUITEM "Subsampling",                 ID_QUALITY_SUBSAMPLING
+        MENUITEM SEPARATOR
+        POPUP "Anti-Aliasing"
+        BEGIN
+            MENUITEM "None",                        ID_AA_none
+            MENUITEM "Good (max. 2x2)",             ID_AA_good
+            MENUITEM "Best  (max. 4x4)",            ID_AA_best
+        END
+        POPUP "Interpolation"
+        BEGIN
+            MENUITEM "None",                        ID_CaIn_None
+            MENUITEM "Unified Center-Kernel",       ID_CaIn_Kernel
+            MENUITEM "Unified Center Kernel (large)", ID_CaIn_Other
+            MENUITEM "Unified Bilinear Kernel",     ID_Caln_Other2
+            MENUITEM "Differential Bilinear",       ID_Caln_Diff
+            MENUITEM "Stacked Bilinear Kernels",    ID_Caln_Stack
+            MENUITEM "Precalculated Bilinear Patches", ID_Caln_PreBiPatch
+        END
+        POPUP "Caustics"
+        BEGIN
+            POPUP "Samples"
+            BEGIN
+                MENUITEM "  2500 (Coarse)",             ID_CaSa_Coarse
+                MENUITEM "10000 (Medium)",              ID_CaSa_Med
+                MENUITEM "40000 (Fine)",                ID_CaSa_Hig
+            END
+            POPUP "Quality"
+            BEGIN
+                MENUITEM "20 (Noisy)",                  ID_CaQu_Noisy
+                MENUITEM "30 (Medium)",                 ID_CaQu
+                MENUITEM "40 (Smooth)",                 ID_CaQu_Smooth
+            END
+            MENUITEM "Calculate",                   ID_CAUSTICS
+            MENUITEM "Display",                     ID_CaDisp
+        END
+        POPUP "Global Illumination"
+        BEGIN
+            POPUP "Samples"
+            BEGIN
+                MENUITEM "125,000 (Coarse)",            ID_GISa_Coarse
+                MENUITEM "500,000 (Medium)",            ID_GISa_Med
+                MENUITEM "2,000,000 (Fine)",            ID_GISa_Fine
+            END
+            POPUP "Quality"
+            BEGIN
+                MENUITEM "1000 (Noisy)",                ID_GIQu_Noisy
+                MENUITEM "2500 (Medium)",               ID_GIQu_Med
+                MENUITEM "5000 (Smooth)",               ID_GIQu_Smooth
+            END
+            MENUITEM "Only Indirect",               ID_GIOnlyIndirect
+            MENUITEM "Calculate",                   ID_GICalc
+            MENUITEM "Display",                     ID_GIDisp
+        END
+        MENUITEM "Filter",                      ID_FILTER
+        MENUITEM SEPARATOR
+        POPUP "Resolution"
+        BEGIN
+            MENUITEM "320x240",                     ID_RES320
+            MENUITEM "480x360",                     ID_RES480
+            MENUITEM "512x384",                     ID_RES512
+            MENUITEM "640x480",                     ID_RES640
+            MENUITEM "800x600",                     ID_RES800
+        END
+        POPUP "Threads"
+        BEGIN
+            MENUITEM "1",                           ID_SingleThread
+            MENUITEM "2",                           ID_DualThread
+            MENUITEM "4",                           ID_QuadThread
+        END
+        MENUITEM SEPARATOR
+        POPUP "Sampling"
+        BEGIN
+            MENUITEM "1/16 (Raw)",                  ID_SAMP_RAW
+            MENUITEM "1/16",                        ID_SAMP_INT16
+            MENUITEM "1/4",                         ID_SAMP_4
+            MENUITEM "1/1",                         ID_SAMP_FULL
+            MENUITEM SEPARATOR
+            MENUITEM "Standard",                    ID_SAMP_STD
+        END
+        POPUP "Adaptive"
+        BEGIN
+            MENUITEM "  5 fps",                     ID_QUALITY_AD5
+            MENUITEM "10 fps",                      ID_QUALITY_AD10
+            MENUITEM "15 fps",                      ID_QUALITY_AD15
+            MENUITEM "20 fps",                      ID_QUALITY_AD20
+            MENUITEM "25 fps",                      ID_QUALITY_AD25
+            MENUITEM "30 fps",                      ID_QUALITY_AD30
+        END
+    END
+    POPUP "Shader"
+    BEGIN
+        MENUITEM "Depth",                       ID_SHADER_DEPTH
+        MENUITEM "Normals",                     ID_SHADER_NORMALS
+        MENUITEM "Reflection",                  ID_SHADER_REFLECTION
+        MENUITEM "UV-Coords",                   ID_SHADER_UV
+        MENUITEM "Simple",                      ID_SHADER_SIMPLE
+        MENUITEM "Phong",                       ID_SHADER_PHONG
+    END
+    POPUP "Test"
+    BEGIN
+        MENUITEM "Asm",                         ID_TEST_ASM
+    END
+    POPUP "&Info"
+    BEGIN
+        MENUITEM "&About RaVi...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 212, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RaVi"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,14,20,20
+    LTEXT           "Real-time",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Raytracing Visualizer ""RaVi""",IDC_STATIC,40,19,119,8
+    DEFPUSHBUTTON   "OK",IDOK,163,52,42,14,WS_GROUP
+    LTEXT           "Design Demo Release 0.38 (03/16/2006)",IDC_STATIC,40,28,
+                    132,8
+    LTEXT           "© Dipl. Ing. (FH) Michael Granz",IDC_STATIC,40,42,107,8
+    LTEXT           "E-Mail: Michael.Granz@online.de",IDC_STATIC,40,51,107,8
+    LTEXT           "www.winosi.onlinehome.de/RaVi.htm",IDC_STATIC,40,60,120,
+                    8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RaVi MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RaVi\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RaVi.EXE\0"
+            VALUE "ProductName", "RaVi Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "RaVi"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RaVi"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TEST_ASM             "Use optimized assembly routines"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RaVi.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "afxres.rc"         // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
