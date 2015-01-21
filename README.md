@@ -11,25 +11,25 @@ to super high-quality filtered adaptive 4x4 anti-aliasing.
 
 It includes some Demoscenes:
 
-Bouncing Sphere
+Bouncing Sphere -
 The first demo animates the famous "mirror-sphere on checkerboard floor" scene in 320x240 pixel resolution at interactive framerates of up to 60 fps.
 In adaptive sub-sampling mode, a special interpolation scheme saves many unneccessary ray-casts without decreasing image quality too much.
 
-Moving Light
+Moving Light -
 Here, the lightsource moves around the scene. Phong shading with specular highlights and correct dropshadows are rendered on true quadric surfaces in real-time.
 The scene is stored in a special space partitioning structure (BSP Tree), which makes it possible to render very large scenes with many hundreds or thousands of
 objects in logarithmic time.
 
-Glass Cube
+Glass Cube -
 Another demo shows a spinning glass cube. True reflection and refraction according to fresnels law is calculated in real-time.
 
-Soft Shadow
+Soft Shadow -
 One of the demo sets shows a cylinder lit by an area light casting a soft shadow with correct penumbra.
 
-Caustics
+Caustics -
 The current RaVi-Engine can even render caustics in real-time, but this feature is still under development.
 
-Cornell Box
+Cornell Box -
 The latest demo shows global illumination with diffuse indirect illumination and color bleeding in real-time!
 
 
